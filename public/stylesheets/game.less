@@ -23,7 +23,7 @@ body {
 			width: 35px;
 			height: 35px;
 			border-radius: 2px;
-			background: #666;
+			background: #000050;
 		}
 
 		.element {
@@ -33,7 +33,7 @@ body {
 			.caption {
 				transition: color 0.6s ease-in-out;
 				margin-top: -20px;
-				color: #999;
+				color: #fff8ff;
 				font-size: 12px;
 				font-weight: 200;
 				text-transform: uppercase;
@@ -42,23 +42,23 @@ body {
 			text {
 				transition: fill 0.6s ease-in-out;
 				font-family: "Monaco" monospace;
-				fill: #1ECD97;
+				fill: #fff8ff;
 				font-size: 20px;
 			}
 		}
 
 		.healthbar {
 			.bar-background {
-				fill: rgba(0,0,0,0.05);
+				fill: #fff8ff;
 			}
 
 			.bar-health {
-				fill: #1ECD97;
+				fill: #ff00ff;
 			}
 
 			.label {
 				text-anchor: middle;
-				fill: white;
+				fill: #000050;
 				font-size: 12px;
 				font-family: 'monaco' monospace;
 			}
@@ -70,7 +70,7 @@ body {
 		position: fixed;
 		top: 110px;
 		left: 20px;
-		color: #333;
+		color: #ff00ff;
 		font-weight: 200;
 		width: 370px;
 		height: 320px;
@@ -83,8 +83,8 @@ body {
 			width: 100%;
 			padding: 10px;
 			border: none;
-			color: #fff;
-			background-color: rgba(30, 205, 151, 0.8);
+			color: #C9C7FF;
+			background-color: #fff8ff;
 			border-radius: 4px;
 			font-size: 20px;
 
@@ -94,17 +94,17 @@ body {
 			}
 
 			&:hover {
-				background-color: rgba(30, 205, 151, 1);
+				background-color: #c9c7ff;
 			}
 
 			&:active {
-				box-shadow: inset 0 2px 1px rgba(0,0,0,0.1);
+				box-shadow: inset 0 2px 1px #48957e;
 			}
 		}
 
 		a {
 			text-decoration: none;
-			color: dodgerblue;
+			color: #000050;
 
 			&:hover {
 				text-decoration: underline;
@@ -128,9 +128,9 @@ body {
 
 		.hotkey {
 			transition: color 0.6s ease-in-out;
-			background: rgba(0,0,0,0.1);
+			background: #ff00ff;
 			border-radius: 2px;
-			border: 1px solid rgba(0,0,0,.2);
+			border: 1px solid #fff8ff;
 			padding: 2px 5px;
 			font-family: "monaco" monospace;
 			font-size: 12px;
@@ -143,7 +143,7 @@ body {
 
 		.bg-circle {
 			transition: fill 0.6s ease-in-out;
-			fill: #999;
+			fill: #e67d7e;
 			stroke: none;
 		}
 
@@ -151,48 +151,48 @@ body {
 			font-family: "Monaco" monospace;
 			stroke: none;
 			// fill: #1ECD97;
-			fill: #E74C3C;
+			fill: #fff8ff;
 		}
 
 		.game-over {
 			text-anchor: middle;
 			font-size: 30px;
-			fill: #999;
+			fill: #e67d7e;
 			opacity: 0.1;
 		}
 
 		.blue {
 			.lg {
-				fill: cornflowerblue;
+				fill: #fff8ff;
 			}
 		}
 
 		.purple {
 			.lg {
-				fill: mediumslateblue;
+				fill: #ff00ff;
 			}
 		}
 
 		.marine {
 			.lg {
-				fill: mediumaquamarine;
+				fill: #c9c7ff;
 			}
 		}
 
 		.sm {
-			fill: rgba(0,0,0,0.1);
+			fill: #000050;
 		}
 	}
 
 	&.dark {
 		.element {
 			text {
-				fill: yellow;
+				fill: #ff00ff;
 			}
 		}
 
 		.color-theme {
-			background: white;
+			background: #000050;
 		}
 
 		.modal {
@@ -204,7 +204,7 @@ body {
 		}
 
 		.main {
-			background: #333;
+			background: #000050;
 
 			.bg-circle {
 				fill: whitesmoke;
@@ -212,7 +212,7 @@ body {
 		}
 
 		text {
-			fill: yellow;
+			fill: #ff00ff;
 		}
 	}
 }
@@ -220,19 +220,19 @@ body {
 .cannon .body {
 	opacity: 0;
 	stroke-width: 1;
-	stroke: lightsteelblue;
-	fill: #1ECD97;
-	
+	stroke: #ff00ff;
+	fill: #ff00ff;
+
 }
 
 .red {
 	stroke-width: 4;
-	stroke: red;
+	stroke: #e67d7e;
 	fill: none;
 }
 
 .orange {
-	fill: orange;
+	fill: #ffedc6;
 	stroke: none;
 }
 
@@ -243,7 +243,7 @@ body {
 
 .cannon line {
 	opacity: 0;
-	stroke: #1ECD97;
+	stroke: #c9c7ff;
 	stroke-width: 8;
 }
 

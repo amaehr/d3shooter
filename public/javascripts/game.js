@@ -1,6 +1,6 @@
 var Shooter = function () {
 	var scope = this;
-	
+
 	d3.xml('/images/explosion.svg', function (xml) {
 		scope.explosion = xml.documentElement;
 
@@ -15,7 +15,7 @@ var Shooter = function () {
 		scope.initDestroyedCounter();
 		scope.initAccuracy();
 		scope.initHealthbar();
-		
+
 		d3.select('button').on('click', function () {
 			scope.start();
 
@@ -107,7 +107,7 @@ var Shooter = function () {
 			.duration(3000)
 				.style('opacity', 1)
 				.style('font-size', 45);
-		
+
 		scope.game.selectAll('g')
 			.transition()
 			.duration(2000)
@@ -137,7 +137,7 @@ var Shooter = function () {
 		scope.background = scope.canvas
 			.append('g')
 			.classed('background', true);
-		
+
 		scope.game = scope.canvas
 			.append('g')
 			.classed('game', true);
@@ -146,7 +146,7 @@ var Shooter = function () {
 	scope.initDimensions = function () {
 		var clientRect = scope.canvas
 			.node().getBoundingClientRect();
-		
+
 		scope.width = clientRect.width;
 		scope.height = clientRect.height;
 	};
@@ -199,7 +199,7 @@ var Shooter = function () {
 	};
 
 	scope.updateDestroyedCounter = function () {
-		scope.updateCounter(scope.destroyed, 1);	
+		scope.updateCounter(scope.destroyed, 1);
 	};
 
 	scope.initAccuracy = function () {
@@ -389,5 +389,5 @@ var Shooter = function () {
 			scope.scheduleNewEnemy();
 		}, scope.T);
 	};
-	
+
 };

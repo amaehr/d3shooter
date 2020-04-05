@@ -20,7 +20,7 @@ var Enemy = function (params) {
 			.classed('enemy ' + data.className, true)
 			.attr('lives', data.lives)
 			.attr('transform', 'translate(' + [cxStart, -bigR] + ')');
-		
+
 		scope.enemy
 			.transition()
 			.duration(t)
@@ -38,9 +38,9 @@ var Enemy = function (params) {
 
 		scope.enemy.intervalId = setInterval(function () {
 			var r, x, y, width, height, enemyBody, clientRect, rockets;
-			
+
 			clientRect = scope.enemy.node().getBoundingClientRect();
-			
+
 			x = clientRect.left;
 			y = clientRect.top;
 			width = clientRect.width;
@@ -50,7 +50,7 @@ var Enemy = function (params) {
 				.each(function () {
 					var rocket = d3.select(this),
 						clientRect = rocket.select('.rocket-body').node().getBoundingClientRect();
-					
+
 					var lives,
 						damage,
 						explosion;
@@ -63,7 +63,7 @@ var Enemy = function (params) {
 						rocket
 							.transition()
 							.duration(0);
-						
+
 						rocket.remove();
 
 						scope.canvas.append('circle')

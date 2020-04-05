@@ -19,7 +19,7 @@ var Cannon = function (params) {
 				bbox;
 
 			plane = d3.select(xml.documentElement).select('#Page-1');
-			
+
 			plane = scope.canvas.node()
 				.appendChild(plane.node());
 
@@ -321,7 +321,7 @@ var Cannon = function (params) {
 
 			opp2 = adj * Math.tan(angle);
 			adj2 = opp / Math.tan(angle);
-			
+
 			if (opp + start[1] > scope.height) {
 				opp = opp2;
 			} else {
@@ -345,7 +345,7 @@ var Cannon = function (params) {
 
 			opp2 = -adj * Math.tan(angle);
 			adj2 = -opp / Math.tan(angle);
-			
+
 			if (opp > start[1]) {
 				opp = opp2;
 			} else {
@@ -377,7 +377,7 @@ var Cannon = function (params) {
 					.duration(300)
 						.style("opacity", 0)
 						.remove();
-			
+
 			var adjacentLine = this.canvas.select(".adjacent");
 			if (!adjacentLine.node()) {
 				adjacentLine = this.canvas
@@ -417,6 +417,6 @@ var Cannon = function (params) {
 	};
 
 	scope.initCannon();
-	scope.initMouse();	
+	scope.initMouse();
 	scope.initHotkeys();
 };
