@@ -1,122 +1,125 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>Spiel</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel='stylesheet' href='/stylesheets/style.css' />
-        <link rel='stylesheet' href='/stylesheets/main.css' />
-        <link rel='stylesheet' href='/stylesheets/game.css' />
-    </head>
-    <body>
-        <!--[if lt IE 10]>
+
+<head>
+    <meta charset="utf-8">
+    <title>Spiel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <link rel='stylesheet' href='/stylesheets/game.css' />
+</head>
+
+<body>
+    <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container dark">
-            <div class="toolbar">
-                <div class="color-theme">
-                </div>
-
-                <div id="score" class="element">
-                    <svg width="80" height="50"></svg>
-                    <div class="caption">score</div>
-                </div>
-
-                <div id="timer" class="element">
-                    <svg width="80" height="50"></svg>
-                    <div class="caption">zeit</div>
-                </div>
-
-                <div id="destroyed" class="element">
-                    <svg width="80" height="50"></svg>
-                    <div class="caption">zerstört</div>
-                </div>
-
-                <div id="accuracy" class="element">
-                    <svg width="80" height="50"></svg>
-                    <div class="caption">gennauigkeit</div>
-                </div>
-
-                <div class="healthbar">
-                    <svg width="400" height="50"></svg>
-                </div>
+    <div class="container dark">
+        <div class="toolbar">
+            <div class="color-theme">
             </div>
 
-            <div class="modal">
-                <button>Start</button>
-                <p>
-                    Zerstöre die bösen Viren.
-                </p>
-
-                <table>
-                    <tr>
-                        <td>
-                            <span class="hotkey">mouse</span>
-                        </td>
-                        <td>
-                            drehen
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="hotkey">LM click</span>
-                        </td>
-                        <td>
-                            feuern
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="hotkey">a</span>
-                        </td>
-                        <td>
-                            links
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="hotkey">d</span>
-                        </td>
-                        <td>
-                            rechts
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="hotkey">w</span>
-                        </td>
-                        <td>
-                            rauf
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="hotkey">s</span>
-                        </td>
-                        <td>
-                            runter
-                        </td>
-                    </tr>
-
-                </table>
-
-                <div class="footer">
-                    by open museum für VersusVirus
-                </div>
+            <div id="score" class="element">
+                <svg width="80" height="50"></svg>
+                <div class="caption">score</div>
             </div>
 
+            <div id="timer" class="element">
+                <svg width="80" height="50"></svg>
+                <div class="caption">zeit</div>
+            </div>
+
+            <div id="destroyed" class="element">
+                <svg width="80" height="50"></svg>
+                <div class="caption">zerstört</div>
+            </div>
+
+            <div id="accuracy" class="element">
+                <svg width="80" height="50"></svg>
+                <div class="caption">gennauigkeit</div>
+            </div>
+
+            <div class="healthbar">
+                <svg width="400" height="50"></svg>
+            </div>
         </div>
 
-        <script type="text/javascript" src="javascripts/g_analytics.js"></script>
-        <script type="text/javascript" src="javascripts/d3.js"></script>
-        <script type="text/javascript" src="javascripts/constants.js"></script>
-        <script type="text/javascript" src="javascripts/cannon.js"></script>
-        <script type="text/javascript" src="javascripts/enemy.js"></script>
-        <script type="text/javascript" src="javascripts/game.js"></script>
-        <script type="text/javascript">
-            var game = new Shooter();
-        </script>
+        <div class="modal">
+            <button>Start</button>
+            <p>
+                Zerstöre die bösen Viren.
+            </p>
+
+            <table>
+                <tr>
+                    <td>
+                        <span class="hotkey">maus</span>
+                    </td>
+                    <td>
+                        drehen
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hotkey">klick</span>
+                    </td>
+                    <td>
+                        feuern
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hotkey">a</span>
+                    </td>
+                    <td>
+                        links
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hotkey">d</span>
+                    </td>
+                    <td>
+                        rechts
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hotkey">w</span>
+                    </td>
+                    <td>
+                        rauf
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hotkey">s</span>
+                    </td>
+                    <td>
+                        runter
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="footer">
+                by open-museum
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="javascripts/g_analytics.js"></script>
+    <script type="text/javascript" src="javascripts/d3.js"></script>
+    <script type="text/javascript" src="javascripts/constants.js"></script>
+    <script type="text/javascript" src="javascripts/cannon.js"></script>
+    <script type="text/javascript" src="javascripts/enemy.js"></script>
+    <script type="text/javascript" src="javascripts/game.js"></script>
+    <script type="text/javascript">
+        var game = new Shooter();
+    </script>
 </body>
+
 </html>
